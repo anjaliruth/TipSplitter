@@ -7,9 +7,9 @@ import TipAmount from "./components/TipAmount/TipAmount";
 import Total from "./components/Total/Total";
 
 function App() {
-  const [billAmount, setBillAmount] = useState(0);
+  const [billAmount, setBillAmount] = useState();
   const [tipPercent, setTipPercent] = useState(0);
-  const [numPeople, setNumPeople] = useState(0);
+  const [numPeople, setNumPeople] = useState();
 
   //function to set Bill state based on input value
   function handleBillAmount(e) {
@@ -27,7 +27,7 @@ function App() {
   function handleReset(){
     setBillAmount("");
     setTipPercent(0);
-    setNumPeople(0);
+    setNumPeople("");
   }
   console.log(billAmount);
   console.log(tipPercent);
@@ -37,9 +37,9 @@ function App() {
       <h1 className="title">Tip Splitter</h1>
       <div className="App">
         <div className="inputFields">
-          <BillAmount handleBillAmount={handleBillAmount} />
+          <BillAmount handleBillAmount={handleBillAmount} billAmount={billAmount} />
           <TipButton handleTipAmount={handleTipAmount} />
-          <AmountPpl handlenumPeople={handlenumPeople} />
+          <AmountPpl handlenumPeople={handlenumPeople} numPeople={numPeople}/>
         </div>
         <div className="outputFields">
           <TipAmount
