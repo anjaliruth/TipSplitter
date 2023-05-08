@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  :root {
+    --color1: hsl(185, 41%, 84%);
+    --color2: hsl(189, 41%, 97%);
+    --color3: hsl(172, 67%, 45%);
+    --color4: hsl(183, 100%, 15%);
+    --color5: hsl(186, 14%, 43%);
+    --color6: hsl(184, 14%, 56%);
+    --color7: hsl(0, 0%, 100%);
+   
   }
+
+  body {
+    font-family: 'Space Mono', monospace;
+    background-color: #282c34;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+.App{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 60%;
+  height: 40%;
+  margin: 0 auto;
+
+}
+.title {
+  font-size: 1.5em;
+  text-align: center;
+  color: #000000;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputFields {
+  display: flex;
+  width: 40%;
+  height: 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: blueviolet;
+}
+
+.outputFields {
+  display: flex;
+  width: 40%;
+  height: 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: var(--color4);
+  border-radius:5px;
+
+}
+
+.billAmount {
+  font-size: 0.4rem;
+  color: #000000;
+  border-radius: 5px;
+  background-color: aliceblue;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.billAmount > input {
+  width: 80%;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--color3);
+  margin-top: 2px;
+
+}
+
+.buttonsTitle{
+  font-size: 0.4rem;
+  background-color: antiquewhite;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+}
+.tipButtons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  background-color: blue;
+}
+
+.tipButtons > button {
+  border: none;
+  border-radius: 3px;
+}
+.tipButtons > button:hover {
+  border: none;
+  border-radius: 3px;
+  background-color: var(--color3);
+}
+
+.amtPeopleTitle{
+font-size: 0.4rem;
+background-color: aquamarine;
+padding: 0;
+margin-top: 10px;
+margin-bottom:0;
+text-align: left;
+}
+
+
+.outputTitle {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.outputTitle > p {
+ 
+  padding: 0;
+  margin-top: 2px;
+  margin-bottom:0;
+  text-align: left;
+ 
+  width: 100%
+}
+.outputTitle > .big {
+  font-size:0.6rem ;
+  ;
 }
 
-.App-link {
-  color: #61dafb;
+.outputTitle > .small {
+  font-size:0.4rem ;
+  color: var(--color6);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.sectionOutput{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
 }

@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function AmountPpl( {handlenumPeople}){
   return (
-    <div>
-        <h1>Number of People</h1>
+    <div className="amtPeople">
+        <p className="amtPeopleTitle">Number of People</p>
         <input type="number" placeholder="0" onChange={handlenumPeople} />
     </div>
   )

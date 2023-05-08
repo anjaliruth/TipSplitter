@@ -20,20 +20,35 @@ function App() {
     setTipPercent(amount);
   }
 
-  function handlenumPeople (e){
-    setNumPeople(e.target.value)
+  function handlenumPeople(e) {
+    setNumPeople(e.target.value);
   }
 
-  console.log(billAmount)
-  console.log(tipPercent)
-  console.log(numPeople)
+  console.log(billAmount);
+  console.log(tipPercent);
+  console.log(numPeople);
   return (
-    <div className="App">
-      <BillAmount handleBillAmount={handleBillAmount} />
-      <TipButton handleTipAmount={handleTipAmount} />
-      <AmountPpl handlenumPeople={handlenumPeople}/>
-      <TipAmount billAmount={billAmount} tipPercent={tipPercent} numPeople={numPeople}/>
-      <Total billAmount={billAmount} tipPercent={tipPercent} numPeople={numPeople}/>
+    <div>
+      <h1 className="title">Tip Splitter</h1>
+      <div className="App">
+        <div className="inputFields">
+          <BillAmount handleBillAmount={handleBillAmount} />
+          <TipButton handleTipAmount={handleTipAmount} />
+          <AmountPpl handlenumPeople={handlenumPeople} />
+        </div>
+        <div className="outputFields">
+          <TipAmount
+            billAmount={billAmount}
+            tipPercent={tipPercent}
+            numPeople={numPeople}
+          />
+          <Total
+            billAmount={billAmount}
+            tipPercent={tipPercent}
+            numPeople={numPeople}
+          />
+        </div>
+      </div>
     </div>
   );
 }
