@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
 
-export default function BillAmount({handleBillAmount}){
-    
+export default function BillAmount({ handleBillAmount }) {
   return (
     <div className="billAmount">
-        <label htmlFor="billAmount">Bill Amount</label>
-        <input id="billAmount" name="billAmount" onChange= {handleBillAmount}/>
+      <label htmlFor="billAmount" className="inputLabel1">
+        <div />
+        Bill
+      </label>
+      {/* <img src={dollarIcon} alt="dollar icon" className="dollarIcon"/> */}
+      <input id="billAmount" name="billAmount" onChange={handleBillAmount} />
     </div>
-  )
+  );
 }

@@ -24,6 +24,11 @@ function App() {
     setNumPeople(e.target.value);
   }
 
+  function handleReset(){
+    setBillAmount("");
+    setTipPercent(0);
+    setNumPeople(0);
+  }
   console.log(billAmount);
   console.log(tipPercent);
   console.log(numPeople);
@@ -47,6 +52,7 @@ function App() {
             tipPercent={tipPercent}
             numPeople={numPeople}
           />
+          <button onClick = {handleReset}className="resetButton">Reset</button>
         </div>
       </div>
     </div>
