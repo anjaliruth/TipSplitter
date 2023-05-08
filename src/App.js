@@ -52,7 +52,7 @@ function App() {
             tipPercent={tipPercent}
             numPeople={numPeople}
           />
-          <button onClick = {handleReset}className="resetButton">Reset</button>
+          <button onClick = {handleReset}className="resetButton">RESET</button>
         </div>
       </div>
     </div>
