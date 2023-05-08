@@ -50,7 +50,7 @@ gap:10px;
   height: 10%;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 auto;
   padding: 20px;
   background-color: blueviolet;
@@ -79,7 +79,7 @@ gap:10px;
   text-align: left;
 }
 .billAmount > input {
-  width: 110%;
+  width: 104%;
   height: 100%;
   border-radius: 5px;
   border: 1px solid var(--color3);
@@ -171,7 +171,7 @@ text-align: left;
   margin-top: 2px;
   border: 1px solid var(--color3);
   border-radius: 5px;
-  width: 110%;
+  width: 114%;
 
 }
 
