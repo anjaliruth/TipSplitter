@@ -10,7 +10,7 @@ function App() {
   const [billAmount, setBillAmount] = useState("");
   const [tipPercent, setTipPercent] = useState(0);
   const [numPeople, setNumPeople] = useState("");
-  const [customTipAmount, setCustomTipAmount] = useState(0);
+  const [customTipAmount, setCustomTipAmount] = useState();
   const [tipMethod, setTipMethod] = useState("");
 
   //function to set Bill state based on input value
@@ -44,7 +44,7 @@ console.log(billAmount)
   console.log(numPeople);
   return (
     <div>
-      <h1 className="title">Tip Splitter</h1>
+      <h1 className="title">S P L I<br />T T E R</h1>
       <div className="App">
         <div className="inputFields">
           <BillAmount handleBillAmount={handleBillAmount} billAmount={billAmount}/>

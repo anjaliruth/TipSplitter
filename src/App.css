@@ -11,6 +11,15 @@
    
   }
 
+  /* .title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  max-width: 40px;
+  background-color: #fff;
+  } */
+
   * {
     font-family: 'Space Mono', monospace;
     /* color: #ffffff; */
@@ -34,15 +43,15 @@
   max-width: 500px;
   height: 50%;
   margin:40px auto;
-padding: 20px;
-border-radius: 5px;
+padding: 15px;
+border-radius: 10px;
 gap:10px;
 }
 .title {
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: center;
-  color: #000000;
-  margin-top: 80px;
+  color: var(--color5);
+  margin-top: 50px;
 
 }
 
