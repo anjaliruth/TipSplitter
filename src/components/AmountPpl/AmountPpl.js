@@ -4,7 +4,7 @@ export default function AmountPpl( {handlenumPeople, numPeople}){
   return (
     <div className="amtPeople">
         <p className="inputLabel3">Number of People</p>
-        <input onChange={handlenumPeople} value={numPeople}/>
+        <input value={numPeople} onChange={handlenumPeople} />
     </div>
   )
 }

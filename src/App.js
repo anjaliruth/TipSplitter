@@ -37,9 +37,9 @@ function App() {
       <h1 className="title">Tip Splitter</h1>
       <div className="App">
         <div className="inputFields">
-          <BillAmount handleBillAmount={handleBillAmount} billAmount={billAmount} />
-          <TipButton handleTipAmount={handleTipAmount} />
-          <AmountPpl handlenumPeople={handlenumPeople} numPeople={numPeople}/>
+          <BillAmount handleBillAmount={handleBillAmount} />
+          <TipButton handleTipAmount={handleTipAmount} tipPercent={tipPercent} />
+          <AmountPpl handlenumPeople={handlenumPeople} />
         </div>
         <div className="outputFields">
           <TipAmount

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function TipButton({ handleTipAmount }) {
+export default function TipButton({ handleTipAmount, tipPercent }) {
   const tips = [5, 10, 15, 25, 50];
   return (
     <div className="tipsTotal">

@@ -9,7 +9,7 @@ export default function TipAmount({ billAmount, tipPercent, numPeople }) {
       </div>
       <div className="calculatedAmt">
         {tipPercent > 0 && numPeople > 0
-          ? `$${((billAmount * tipPercent) / numPeople).toFixed(2)}`
+          ? `£${((billAmount * tipPercent) / numPeople).toFixed(2)}`
           : "£0.00"}
       </div>
     </div>
