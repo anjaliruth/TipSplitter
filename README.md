@@ -1,7 +1,8 @@
-# Getting Started with Create React App
+# Tip Splitter App
 
 This project was a challenge from frontendmentor.io. 
-In this project, i implemented a React app, using states to manage different user inputs, and also to toggle between the different tip menthors( % or Custom)
+In this project, i implemented a React app, using states to manage different user inputs. 
+A particular new area I ventured to which was a struggle at first, was the use of states to toggle between the different tip menthors( % or Custom).
 
 ## Demo
 
