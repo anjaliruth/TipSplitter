@@ -145,20 +145,20 @@ box-sizing: border-box;
   color: var(--color7);
   background-color: var(--color4);
 }
+
+
 .tipButtons > button:hover {
   border: none;
   border-radius: 3px;
   background-color: var(--color3);
 }
 .custom{
+  box-sizing: border-box;
   width:100%;
   border: none;
   border-radius: 3px;
-  background-color: var(--color4);
-}
-
-.custom::placeholder{
-  color: #fff;
+  text-align: right;
+  padding-right: 5px;
 }
 
 .inputLabel3{

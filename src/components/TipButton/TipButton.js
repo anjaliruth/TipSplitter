@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function TipButton({ handleTipAmount, tipPercent }) {
+export default function TipButton({ handleTipPercent, handleCustomTipAmount, customTipAmount }) {
   const tips = [5, 10, 15, 25, 50];
   return (
     <div className="tipsTotal">
@@ -8,12 +8,12 @@ export default function TipButton({ handleTipAmount, tipPercent }) {
       <div className="tipButtons">
         {tips.map((tip, index) => {
           return (
-            <button key={index} onClick={() => handleTipAmount(tip / 100)}>
+            <button key={index} onClick={() => handleTipPercent(tip / 100)}>
               {tip}%
             </button>
           );
         })}
-        <input onChange = {(event) => handleTipAmount(event.target.value/100)}className="custom" placeholder="Custom" />
+        <input onChange = {(event) => handleCustomTipAmount(event.target.value)}className="custom" placeholder="Custom" value={customTipAmount}/>
       </div>
     </div>
   );

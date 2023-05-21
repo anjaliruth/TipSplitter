@@ -7,29 +7,39 @@ import TipAmount from "./components/TipAmount/TipAmount";
 import Total from "./components/Total/Total";
 
 function App() {
-  const [billAmount, setBillAmount] = useState();
+  const [billAmount, setBillAmount] = useState("");
   const [tipPercent, setTipPercent] = useState(0);
-  const [numPeople, setNumPeople] = useState();
+  const [numPeople, setNumPeople] = useState("");
+  const [customTipAmount, setCustomTipAmount] = useState(0);
+  const [tipMethod, setTipMethod] = useState("");
 
   //function to set Bill state based on input value
   function handleBillAmount(e) {
-    setBillAmount(e.target.value);
+    setBillAmount(parseFloat(e.target.value));
   }
 
-  function handleTipAmount(amount) {
+  function handleTipPercent(amount) {
+    setTipMethod("percentage");
     setTipPercent(amount);
   }
+  function handleCustomTipAmount(amount) {
+    setTipMethod("custom")
+    setCustomTipAmount(parseFloat(amount));
+  }
 
+console.log(billAmount)
   function handlenumPeople(e) {
     setNumPeople(e.target.value);
   }
 
   function handleReset(){
-    setBillAmount("");
     setTipPercent(0);
-    setNumPeople("");
+    setCustomTipAmount("");
+    setTipMethod("percentage");
+    setBillAmount(""); // Instead of 0, set this to an empty string
+    setNumPeople(""); 
   }
-  console.log(billAmount);
+  console.log(`Bill amt:${billAmount}`);
   console.log(tipPercent);
   console.log(numPeople);
   return (
@@ -37,19 +47,23 @@ function App() {
       <h1 className="title">Tip Splitter</h1>
       <div className="App">
         <div className="inputFields">
-          <BillAmount handleBillAmount={handleBillAmount} />
-          <TipButton handleTipAmount={handleTipAmount} tipPercent={tipPercent} />
-          <AmountPpl handlenumPeople={handlenumPeople} />
+          <BillAmount handleBillAmount={handleBillAmount} billAmount={billAmount}/>
+          <TipButton handleTipPercent={handleTipPercent} handleCustomTipAmount={handleCustomTipAmount} tipPercent={tipPercent} customTipAmount={customTipAmount} />
+          <AmountPpl handlenumPeople={handlenumPeople} numPeople={numPeople} />
         </div>
         <div className="outputFields">
           <TipAmount
             billAmount={billAmount}
             tipPercent={tipPercent}
             numPeople={numPeople}
+            tipMethod={tipMethod}
+            customTipAmount={customTipAmount}
           />
           <Total
             billAmount={billAmount}
             tipPercent={tipPercent}
+            tipMethod={tipMethod}
+            customTipAmount={customTipAmount}
             numPeople={numPeople}
           />
           <button onClick = {handleReset}className="resetButton">RESET</button>
