@@ -10,6 +10,6 @@ A particular new area I ventured to which was a struggle at first, was the use o
 
 https://github.com/anjaliruth/TipSplitter/assets/124257618/87bd3544-44ed-4a85-8347-b3ce5902b853
 
-Try it out yourself here:
+Try it out yourself here: https://anjaliruth.github.io/TipSplitter/
 
 
