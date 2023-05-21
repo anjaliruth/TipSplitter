@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/TipSplitter/static/css/main.31b8b956.css",
+    "main.js": "/TipSplitter/static/js/main.144243d7.js",
+    "static/js/787.d3befce1.chunk.js": "/TipSplitter/static/js/787.d3befce1.chunk.js",
+    "static/media/icon-dollar.svg": "/TipSplitter/static/media/icon-dollar.9f9be3534a9295a65957.svg",
+    "static/media/icon-person.svg": "/TipSplitter/static/media/icon-person.65bfd20465dd1d2cb58c0b53e1160442.svg",
+    "index.html": "/TipSplitter/index.html",
+    "main.31b8b956.css.map": "/TipSplitter/static/css/main.31b8b956.css.map",
+    "main.144243d7.js.map": "/TipSplitter/static/js/main.144243d7.js.map",
+    "787.d3befce1.chunk.js.map": "/TipSplitter/static/js/787.d3befce1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31b8b956.css",
+    "static/js/main.144243d7.js"
+  ]
+}
